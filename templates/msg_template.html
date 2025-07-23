@@ -1,0 +1,194 @@
+<html>
+<table>
+    <thead>
+        <tr>
+            <th colspan="4" style="text-align: center;">NCA DETAILS as on {{data["timestampStr"]}}</th>
+        </tr>
+        <tr>
+            <th colspan="4">Voltage and Frequency</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="1">1</td>
+            <td colspan="1">SSRBPH 400KV MBUS HZ</td>
+            <td colspan="2">
+                {{data["freq"]}}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">2</td>
+            <td colspan="1">SSRBPH 400KV MBUS1 VOLT</td>
+            <td colspan="2">
+                {{data["4B1_KV"]}} kV
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">3</td>
+            <td colspan="1">SSRBPH 400KV MBUS2 VOLT</td>
+            <td colspan="2">
+                {{data["4B2_KV"]}} kV
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Genration Details</th>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>SSRBPH 400 GEN-1</td>
+            <td>
+                {{data["40_G1_MW"]}} MW
+            </td>
+            <td>
+                {{data["40_G1_MVAR"]}} MVar
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>SSRBPH 400 GEN-2</td>
+            <td>
+                {{data["40_G2_MW"]}} MW
+            </td>
+            <td>
+                {{data["40_G2_MVAR"]}} MVar
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>SSRBPH 400 GEN-3</td>
+            <td>
+                {{data["40_G3_MW"]}} MW
+            </td>
+            <td>
+                {{data["40_G3_MVAR"]}} MVar
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>SSRBPH 400 GEN-4</td>
+            <td>
+                {{data["40_G4_MW"]}} MW
+            </td>
+            <td>
+                {{data["40_G4_MVAR"]}} MVar
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>SSRBPH 400 GEN-5</td>
+            <td>
+                {{data["40_G5_MW"]}} MW
+            </td>
+            <td>
+                {{data["40_G5_MVAR"]}} MVar
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>SSRBPH 400 GEN-6</td>
+            <td>
+                {{data["40_G6_MW"]}} MW
+            </td>
+            <td>
+                {{data["40_G6_MVAR"]}} MVar
+            </td>
+        </tr>
+
+        <tr>
+            <th colspan="4">Line Flow</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>SSRBPH RAJGARH 1 400</td>
+            <td>
+                {{data["4_RAJGH_RBPH1_MW"]}} MW
+            </td>
+            <td>
+                {{data["4_RAJGH_RBPH1_MVAR"]}} MVar
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>SSRBPH RAJGARH 2 400</td>
+            <td>
+                {{data["4_RAJGH_RBPH2_MW"]}} MW
+            </td>
+            <td>
+                {{data["4_RAJGH_RBPH2_MVAR"]}} MVar
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>SSRBPH ASOJ1 400</td>
+            <td>
+                {{data["4_ASOJ_RBPH_MW"]}} MW
+            </td>
+            <td>
+                {{data["4_ASOJ_RBPH_MVAR"]}} MVar
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>SSRBPH KASORE 400</td>
+            <td>
+                {{data["4_KSOR_RBPH_MW"]}} MW
+            </td>
+            <td>
+                {{data["4_KSOR_RBPH_MVAR"]}} MVar
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>SSRBPH DHULE 1 400</td>
+            <td>
+                {{data["4_DHUL4_RBPH1_MW"]}} MW
+            </td>
+            <td>
+                {{data["4_DHUL4_RBPH1_MVAR"]}} MVar
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>SSRBPH DHULE 2 400</td>
+            <td>
+                {{data["4_DHUL4_RBPH2_MW"]}} MW
+            </td>
+            <td>
+                {{data["4_DHUL4_RBPH2_MVAR"]}} MVar
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>ICT 1</td>
+            <td>
+                {{data["ICT1_MW"]}} MW
+            </td>
+            <td>
+                {{data["ICT1_MVAR"]}} MVar
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>ICT 2</td>
+            <td>
+                {{data["ICT2_MW"]}} MW
+            </td>
+            <td>
+                {{data["ICT2_MVAR"]}} MVar
+            </td>
+        </tr>
+    </tbody>
+</table>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 0.5em;
+    }
+</style>
+
+</html>
