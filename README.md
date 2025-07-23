@@ -1,4 +1,4 @@
-This script fetche scada data related to SSP and sends email
+This script fetches scada data related to SSP and sends email
 
 ## Prerequisites
 * Install uv
