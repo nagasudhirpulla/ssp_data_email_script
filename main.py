@@ -26,8 +26,9 @@ def main():
     # print(msgTxt)
 
     print("sending email")
+    receiverEmails = appConf["receiverEmails"]
     emailApi = EmailSender()
-    emailApi.sendEmail(["nagasudhir@grid-india.in", "emcnca@gmail.com"],
+    emailApi.sendEmail(receiverEmails,
                        f"SSP Data {pntsData["timestampStr"]}", msgTxt)
 
 
